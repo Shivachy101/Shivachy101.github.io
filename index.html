@@ -1,45 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Organization</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <meta charset="utf-8">
-    <title> Web Basics</title>
-    </head>
-    
-        <body>
-        
-        
-    <h1>Shiva Choudhary </h1>
+  <main>
+    <section class="hero">
+      <h1>Welcome to Our Student Organization</h1>
+      <p>We are a group of passionate students committed to making a difference on campus and in the community.</p>
+      <a href="about.html" class="cta">Learn More</a>
+    </section>
 
-    <h2> Some important things you want to include in your webpage </h2>
-        <ul>
-         <li> Including a title   </li>   
-         <li> Including a body    </li>
-         <li> Including !DOCTYPE html </li>
-         <li> There are many more these are just a few </li>
-        </ul>
-        
+    <section class="features">
+      <div class="feature">
+        <img src="images/activities.jpeg" alt="Feature 1">
+        <h3>Engage in Meaningful Activities</h3>
+        <p>Join our organization and participate in a variety of activities that will enrich your college experience.</p>
+      </div>
+      <div class="feature">
+        <img src="images/peers.jpeg" alt="Feature 2">
+        <h3>Connect with Like-Minded Peers</h3>
+        <p>Meet new people, form lasting friendships, and collaborate on projects that make a positive impact.</p>
+      </div>
+      <div class="feature">
+        <img src="images/leadership.jpeg" alt="Feature 3">
+        <h3>Develop Leadership Skills</h3>
+        <p>Gain valuable experience in organizing events, managing projects, and leading teams.</p>
+      </div>
+    </section>
 
-        <p> Why one wants to include a title on their web page: The title is crucial in helping search engines understand the page’s topic and relevance. It also influences how the page is displayed in search results and affects user engagement. </p>
-        <p>Why one wants to include a body on their web page:The body tag holds the “meat” of your web page, and will include your page’s content. It holds all of your div, img, p, etc tags. Commonly, people also insert styles and stylesheet or javascript references in the body instead of the head. </p>
-        <p>Why one wants to include !DOCTYPE html in their web page: The doctype tag should always be placed at the beginning of the source code of HTML documents and sub-pages. Thanks to DOCTYPE, you can tell at first glance what type of document you’re dealing with. If the declaration is missing in the document, it can lead to errors in how your website is displayed.</p>
-       
-    <h2>Some info about headers</h2>
-    <p>The importance of headers: HTML headers play a pivotal role in structuring web content and enhancing its accessibility. They not only provide a hierarchy to your content but also improve the overall user experience. </p>
+    <section class="testimonials">
+      <h2>What Our Members Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <img src="images/testimonial1.jpeg" alt="Testimonial 1">
+          <blockquote>
+            <p>"Joining this student organization has been a game-changer for me. The opportunities to engage in meaningful activities and develop my leadership skills have been truly transformative."</p>
+            <cite>- Christine kimberly, President</cite>
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <img src="images/testimonial2.jpeg" alt="Testimonial 2">
+          <blockquote>
+            <p>"The sense of community and camaraderie within this organization is unparalleled. I've made lifelong friends and feel empowered to make a difference on campus and beyond."</p>
+            <cite>- Brandon Smith, Vice President</cite>
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <img src="images/testimonial3.jpeg" alt="Testimonial 3">
+          <blockquote>
+            <p>"This student organization has provided me with invaluable experiences and growth opportunities. I highly recommend it to anyone looking to make the most of their college journey."</p>
+            <cite>- Jeniffer Aarons, Treasurer</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    
+  <footer>
+    <p>&copy; 2024 Student Organization. All rights reserved.</p>
+  </footer>
 
-
-    <h2>Why validate your code ?</h2>
-    <p>Here is one reason , W3C validation is the process of checking a website's code to determine if it follows the formatting standards. If you fail to validate your website's pages based on W3C standards, your website will most likely suffer from errors or poor traffic owing to poor formatting and readability.</p>
-    
-    <table> <tr> <th> Description</th><th>Wind speed</th><th>Damage</th></tr><tr><td>Tropical dep</td><td>38MPH</td><td>weak</td></tr><tr><td>tropical storm</td> <td>39-73</td><td>minor</td></tr><tr><td>Tropical Cyclone</td><td>30MPH</td><td>medium</td></tr></table>
-
-
-
-
-
-
-    </body>
-
+  <script src="script.js"></script>
+</body>
 </html>
