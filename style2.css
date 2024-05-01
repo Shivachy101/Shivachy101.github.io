@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #555;
+}
+
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 4rem;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.feature h3 {
+  margin-top: 1rem;
+}
+
+.feature p {
+  margin-top: 0.5rem;
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Testimonials Section */
+.testimonials {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testimonial img {
+  max-width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.testimonial blockquote {
+  font-size: 1.1rem;
+  font-style: italic;
+  max-width: 60ch;
+  margin: 0;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.about-text p {
+    max-width: 60ch;
+    margin-bottom: 1rem;
+  }
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2rem;
+    margin-top: 2rem;
+  }
+  .about-content img {
+    max-width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+.become-member {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+  }
+  
+  .become-member h3 {
+    margin-top: 0;
+  }
+  
+  .become-member form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  
+  .become-member label {
+    font-weight: bold;
+  }
+  
+  .become-member input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .become-member button {
+    grid-column: 1 / 3;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .become-member button:hover {
+    background-color: #555;
+  }
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 4rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero,
+  .features,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero p,
+  .feature p,
+  .testimonial blockquote {
+    max-width: 100%;
+  }
+  .about-content img {
+    height: 300px;
+  }
+  .become-member form {
+    grid-template-columns: 1fr;
+  }
+
+  .become-member button {
+    grid-column: auto;
+  }
+}
